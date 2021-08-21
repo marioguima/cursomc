@@ -9,12 +9,10 @@ import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
 import br.com.guimassolucoes.domain.enums.EstadoPagamento;
 
 @Entity
-@Table(name = "pagamentos")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Pagamento implements Serializable {
 
